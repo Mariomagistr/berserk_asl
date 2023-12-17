@@ -99,7 +99,7 @@ split
 	}
 	
 	// method 2
-	if (old.level == vars.last_level 1 && current.level == 0 && vars.to_split == 1 && current.level0 == vars.level0_to_split[vars.last_level] && (current.level2 == 85 || current.level2 == current.level0)) {
+	if (old.level == vars.last_level && current.level == 0 && vars.to_split == 1 && current.level0 == vars.level0_to_split[vars.last_level] && (current.level2 == 85 || current.level2 == current.level0)) {
 		vars.to_split = 0;
 		return true;
 	}
