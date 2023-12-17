@@ -73,13 +73,13 @@ start
 
 split 
 {
-	print (current.level + " " + current.level0 + " " + current.level2 + "  AAA");
+	print (vars.last_level + " " + vars.to_split + " " + vars.level0_to_split[vars.last_level] + " " + current.level + " " + current.level0 + " " + current.level2 + "  AAA");
 	
 	// 
 	if (current.level != 0 && vars.to_split == 0) {
 		vars.to_split = 1;
 	}
-	if (current.level0 == 43 || (current.level0 == 41 && current.level2 == 41 && current.level == 0)) {
+	if (current.level != 3 && old.level != 3 && (current.level0 == 43 || (current.level0 == 41 && current.level2 == 41 && current.level == 0))) {
 		vars.to_split = 0;
 	}
 
